@@ -1,2 +1,2 @@
 # q2-krona
-Implementation of krona to QIIME2
+Implementation of Krona to QIIME2
