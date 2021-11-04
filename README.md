@@ -8,5 +8,5 @@ conda install -c bioconda krona
 
 ## Installing into QIIME2 environment
 ```
-pip install git+https://github.com/kaanb93/q2-krona
+pip install git+https://github.com/kaanb93/q2-krona.git
 ```
