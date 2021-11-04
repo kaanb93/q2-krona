@@ -13,7 +13,7 @@ Activate the qiime2 environment (in this case it is version 2021.8):
 conda activate qiime2-2021.8
 ```
 
-Then, install source:
+Then, install source: (currently working on this to make it work work)
 ```
 pip install git+https://github.com/kaanb93/q2-krona.git
 ```
