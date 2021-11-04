@@ -1,12 +1,12 @@
 # q2-krona
 Implementation of Krona to QIIME2
 
-## Installing dependencies
+## Install dependencies
 ```
 conda install -c bioconda krona
 ```
 
-## Installing into QIIME2 environment
+## Install within QIIME2 environment
 ```
 pip install git+https://github.com/kaanb93/q2-krona.git
 ```
