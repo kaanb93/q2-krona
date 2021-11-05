@@ -1,11 +1,8 @@
-from setuptools import setup, find_packages
-import versioneer
+from setuptools import setup
 
 setup(
     name="q2-krona",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
-    packages=find_packages(),
+    version='0.0.0.1',
     author="Kaan Büyükaltay",
     author_email="kaanb93@gmail.com",
     url="https://github.com/kaanb93/q2-krona",
