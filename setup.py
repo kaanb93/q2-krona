@@ -1,8 +1,9 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="q2-krona",
     version='0.0.0.1',
+    packages=find_packages(),
     author="Kaan Büyükaltay",
     author_email="kaanb93@gmail.com",
     url="https://github.com/kaanb93/q2-krona",
