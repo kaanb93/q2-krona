@@ -19,13 +19,13 @@ from q2_types.feature_table import FeatureTable, Frequency
 
 plugin = qiime2.plugin.Plugin(
     name='krona',
-    description='This is a simple tool to generate Krona charts'
+    description='This is a simple tool to generate Krona charts '
                 'from feature tables.',
-    version='0.0.0.1',
-    website='placeholder.com',
+    version='1.0.0',
+    website='https://github.com/kaanb93/q2-krona',
     package='q2_krona',
     user_support_text=None,
-    citation_text='placeholder text',
+    citation_text='',
     short_description='Plugin for creating Krona charts.',
 )
 
@@ -56,13 +56,11 @@ plugin.pipelines.register_function(
     },
     outputs=[('krona_plot', Visualization)],
     input_descriptions={
-        'table': 'The feature table containing the samples over which '
-                 'diversity metrics should be computed.',
+        'table': 'Feature table containing the frequencies.',
     },
     parameter_descriptions={
         'level': ('The taxonomic level at which the features should be '
-                  'collapsed. All ouput features will have exactly '
-                  'this many levels of taxonomic annotation'),
+                  'collapsed.'),
         'delimiter': 'Delimiter character used in taxonomy file.'
     },
     output_descriptions={
