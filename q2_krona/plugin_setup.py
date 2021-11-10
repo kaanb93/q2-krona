@@ -40,7 +40,7 @@ plugin.visualizers.register_function(
         'delimiter': 'Delimiter character used in taxonomy file.'
     },
     name='Generate Krona chart visualizer',
-    description="Generate Krona chart visualizer",
+    description="Generate Krona plot from collapsed table.",
     citations=None
 )
 
