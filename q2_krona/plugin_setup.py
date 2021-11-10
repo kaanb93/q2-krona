@@ -19,7 +19,7 @@ from q2_types.feature_table import FeatureTable, Frequency
 
 plugin = qiime2.plugin.Plugin(
     name='krona',
-    description='This is a simple tool to generate Krona charts '
+    description='This is a simple tool to generate Krona plots '
                 'from feature tables.',
     version='1.0.0',
     website='https://github.com/kaanb93/q2-krona',
@@ -39,7 +39,7 @@ plugin.visualizers.register_function(
     parameter_descriptions={
         'delimiter': 'Delimiter character used in taxonomy file.'
     },
-    name='Generate Krona chart visualizer',
+    name='Generate Krona plot visualizer',
     description="Generate Krona plot from collapsed table.",
     citations=None
 )
