@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="q2-krona",
-    version='0.0.0.1',
+    version='1.0.0',
     packages=find_packages(),
     author="Kaan Büyükaltay",
     author_email="kaanb93@gmail.com",
