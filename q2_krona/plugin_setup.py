@@ -7,7 +7,7 @@
 # ----------------------------------------------------------------------------
 
 import qiime2.plugin
-from qiime2.plugin import Visualization
+from qiime2.plugin import Visualization, Citations
 
 import q2_krona
 from q2_krona._functions import plot
@@ -15,6 +15,9 @@ from q2_krona._functions import collapse_and_plot
 
 from q2_types.feature_data import FeatureData, Taxonomy
 from q2_types.feature_table import FeatureTable, Frequency
+
+
+citations = Citations.load('citations.bib', package='q2_krona')
 
 
 plugin = qiime2.plugin.Plugin(
@@ -25,8 +28,7 @@ plugin = qiime2.plugin.Plugin(
     website='https://github.com/kaanb93/q2-krona',
     package='q2_krona',
     user_support_text=None,
-    citation_text='',
-    short_description='Plugin for creating Krona charts.',
+    short_description='Plugin for creating Krona plots.',
 )
 
 plugin.visualizers.register_function(
@@ -40,8 +42,7 @@ plugin.visualizers.register_function(
         'delimiter': 'Delimiter character used in taxonomy file.'
     },
     name='Generate Krona plot visualizer',
-    description="Generate Krona plot from collapsed table.",
-    citations=None
+    description="Generate Krona plot from collapsed table."
 )
 
 plugin.pipelines.register_function(
