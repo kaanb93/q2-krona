@@ -14,4 +14,5 @@ setup(
         ["q2-krona=q2_krona.plugin_setup:plugin"]
     },
     zip_safe=False,
+    package_data={'q2_krona': ['citations.bib']}
 )
