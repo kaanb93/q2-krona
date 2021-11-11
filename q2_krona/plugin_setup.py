@@ -29,6 +29,7 @@ plugin = qiime2.plugin.Plugin(
     package='q2_krona',
     user_support_text=None,
     short_description='Plugin for creating Krona plots.',
+    citations=[citations["krona"]]
 )
 
 plugin.visualizers.register_function(
