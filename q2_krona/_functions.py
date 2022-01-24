@@ -3,6 +3,7 @@ import pandas as pd
 import biom
 import tempfile
 import q2templates
+from shutil import which     
 
 def plot(
         output_dir: str,
@@ -30,9 +31,11 @@ def plot(
             taxa = taxa.replace(delimiter, "\t")
             sample_file.write(str(val) + "\t" + taxa + "\n")
         sample_file.close()
+    
+    if which("ktImportText") is None:
+        raise FileNotFoundError("'ktImportText' is not found, but can be installed with:\n\nconda install -c bioconda krona")      
 
     krona_filepath = os.path.join(tempdir, "index.html")
-
     krona_command = " ".join(["ktImportText", " ".join(sample_filepaths), "-o", krona_filepath])
     os.system(krona_command)
 
