@@ -24,7 +24,7 @@ plugin = qiime2.plugin.Plugin(
     name='krona',
     description='This is a simple tool to generate Krona plots '
                 'from feature tables.',
-    version='1.0.1',
+    version='1.0.2',
     website='https://github.com/kaanb93/q2-krona',
     package='q2_krona',
     user_support_text=None,
